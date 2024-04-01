@@ -27,12 +27,12 @@ pipeline {
         }
     }
     
-    post {
-        always {
-            // Cleanup - remove Docker image after deployment (optional)
-            script {
-                // sh "docker rmi $DOCKER_IMAGE"
-            }
-        }
-    }
+    // post {
+    //     always {
+    //         // Cleanup - remove Docker image after deployment (optional)
+    //         // script {
+    //         //     // sh "docker rmi $DOCKER_IMAGE"
+    //         // }
+    //     }
+    // }
 }
