@@ -6,7 +6,7 @@ pipeline {
     }
     
     stages {
-        stage('Build') {
+        stage('Build Wali Stage') {
             steps {
                 script {
                     // Build Docker image
@@ -16,7 +16,7 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
+        stage('Deploy Wali Stage') {
             steps {
                 script {
                     // Run Docker container
