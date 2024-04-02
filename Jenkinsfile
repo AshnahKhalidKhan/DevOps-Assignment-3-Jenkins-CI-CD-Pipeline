@@ -12,6 +12,7 @@ pipeline {
                 // script {
                 //     // Build Docker image
                 //     // sh 'docker build -t $DOCKER_IMAGE .'
+                //     // docker image build -t image_ka_naam:tag_ka_naam .
                 // }
             }
         }
