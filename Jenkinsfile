@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    tools {
+        // Specify the Git installation name
+        git 'MyGitInstallation'
+    }
     
     environment {
         DOCKER_IMAGE = 'image_ka_naam:tag_ka_naam'
@@ -9,7 +14,8 @@ pipeline {
         stage('Git Wali Stage') {
             steps {
                 echo 'Git say kuch karnay wala message print kar rahi hun....'
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AshnahKhalidKhan/DevOps-Assignment-3-Jenkins-CI-CD-Pipeline']]])
+                checkout scm
+                // checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AshnahKhalidKhan/DevOps-Assignment-3-Jenkins-CI-CD-Pipeline']]])
             }
         }
 
