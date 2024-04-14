@@ -26,7 +26,6 @@ pipeline {
                     // Build Docker image
                     // sh 'docker build -t $DOCKER_IMAGE .'
                     // sh 'docker image build -t image_ka_naam:tag_ka_naam .'
-                    def app = docker.build('image_ka_naam:tag_ka_naam')
                     // docker image build -t image_ka_naam:tag_ka_naam .
                 }
             }
