@@ -14,7 +14,7 @@ pipeline {
         stage('Git Wali Stage') {
             steps {
                 echo 'Git say kuch karnay wala message print kar rahi hun....'
-                checkout scm
+                // checkout scm
                 // checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AshnahKhalidKhan/DevOps-Assignment-3-Jenkins-CI-CD-Pipeline']]])
             }
         }
