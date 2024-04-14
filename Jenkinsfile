@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    tools {
-        // Specify the Git installation name
-        git 'MyGitInstallation'
-    }
+    // tools {
+    //     // Specify the Git installation name
+    //     git 'MyGitInstallation'
+    // }
     
     environment {
         DOCKER_IMAGE = 'image_ka_naam:tag_ka_naam'
