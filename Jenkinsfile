@@ -113,7 +113,8 @@ pipeline {
             steps {
                 script {
                     def changedFiles = sh(script: "git diff --name-only HEAD HEAD~1", returnStdout: true).trim().split("\n")
-                    env.IS_CLIENT_CHANGED = changedFiles.any { it.startsWith('client') }.toString()
+                    // env.IS_CLIENT_CHANGED = changedFiles.any { it.startsWith('client') }.toString()
+                    echo changedFiles
                 }
             }
         }
