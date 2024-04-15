@@ -16,7 +16,7 @@ pipeline {
                 echo 'Git say kuch karnay wala message print kar rahi hun....'
                 // checkout scm
                 def scmVars = checkout scm
-                branchName = scmVars.GIT_BRANCH
+                def branchName = scmVars.GIT_BRANCH
                 sh "echo ${branchName}"
                 // checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AshnahKhalidKhan/DevOps-Assignment-3-Jenkins-CI-CD-Pipeline']]])
             }
