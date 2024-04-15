@@ -106,7 +106,7 @@ pipeline {
     //     }
         stage('Checkout SCM') {
             steps {  
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/AshnahKhalidKhan/DevOps-Assignment-3-Jenkins-CI-CD-Pipeline.git'
+                git branch: 'main', credentialsId: 'github1', url: 'https://github.com/AshnahKhalidKhan/DevOps-Assignment-3-Jenkins-CI-CD-Pipeline.git'
             }
         }
         stage('Determine Changes') {
